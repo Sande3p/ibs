@@ -61,7 +61,7 @@ Ref: https://d.pr/free/i/uVVmoI . Let's say a user has selected `CreateScheme` i
 * If *operation_entity select control's* value is null then there should be no drop-down values for the `output_entity` select control.
 * If *operation_entity select control's* value is not null then the drop-down options of *output_entity select control* should list the values from the `outputs` node of the *operation_entity's* selected value. 
 Ref: https://d.pr/free/i/f8GQx6 . Let's say a user has selected `captureSchemeDetails` in the *operation_entity select control* then, in this case the options of *operation_entity select control* should be *schemeSysid, schemeNumber, errorCode , errorMessage*
->>>>
+>>>
 
 >>>
 #### 3 Code view
