@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Hestia CC | Table and Add/Edit Enhancements
-nav_order: 1
+title: TOSCA Value Editor POC | Get op output & constant
 ---
 
 ##  TOSCA Value Editor POC | Get op output & constant
