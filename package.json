@@ -1,0 +1,16 @@
+{
+  "name": "digital-blueprint",
+  "version": "0.0.1",
+  "description": "digital-blueprint",
+  "devDependencies": {
+    "stylelint": "^10.0.1",
+    "stylelint-config-primer": "^7.0.0",
+    "stylelint-selector-no-utility": "^4.0.0"
+  },
+  "dependencies": {
+    "@primer/css": "^12.3.1"
+  },
+  "scripts": {
+    "test": "stylelint '**/*.scss'"
+  }
+}

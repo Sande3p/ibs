@@ -1,0 +1,10 @@
+{
+  "ignoreFiles" : [
+    "assets/css/digital-bluprint.scss",
+    "assets/css/dark-mode-preview.scss",
+    "_sass/vendor/**/*.scss"
+  ],
+  "extends": [
+    "stylelint-config-primer"
+  ]
+}

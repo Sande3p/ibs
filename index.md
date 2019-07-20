@@ -1,3 +1,10 @@
+---
+layout: default
+title: Home
+nav_order: 0
+permalink: /
+---
+
 # IT Innovation Lab - Digital Blueprints
 
 ## What is it?
