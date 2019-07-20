@@ -1,7 +1,8 @@
 ---
 layout: default
-title: Hestia CC | Table and Add/Edit Enhancements
+title: Hestia CC | Table and Add/Edit Enhancement
 nav_order: 1
+published: true
 ---
 
 Welcome to the **Hestia CC | Table and Add/Edit Enhancements** Challenge. In this challenge, we are looking for you to update the existing functionalities based on the requirements listed in this spec.
@@ -85,4 +86,3 @@ All tables on the Dashboard page should sort the data such that recently edited 
 * If the column name is in the upper case then it is displayed as spaced sperate letter. 
 * Update code in `top-toolbar.component.html:172` such that heading like `PRODUCT_GROUP_NK` should be displayed as 'Product Group Nk' column heading like `endedByAssociate ` should be displayed as `Ended By Associate`
 >>>
-
