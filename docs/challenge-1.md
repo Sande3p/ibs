@@ -1,63 +1,88 @@
 ---
 layout: default
-title: HPIT Mobile App Store
+title: Hestia CC | Table and Add/Edit Enhancements
 nav_order: 1
 ---
 
-# Getting Started
+Welcome to the **Hestia CC | Table and Add/Edit Enhancements** Challenge. In this challenge, we are looking for you to update the existing functionalities based on the requirements listed in this spec.
 
-## Access
+***Let us know any question you have!***
 
-Administrative access is by request. Drop a note on our [teams channel](https://teams.microsoft.com/l/channel/19%3a5a50084f56a44112aef868c42f5449a9%40thread.skype/Digital%2520Blueprints?groupId=30bf84ee-cbc3-4b5f-9b5f-9ceb24daada4&tenantId=ca7981a2-785a-463d-b82a-3db87dfc3ce6) with the following details and we will enable access for you/your teams at the earliest possible.
+#### Technology stack
 
-- Team name/org and purpose (No - we are not judging! It is to understand the maturity of functions needed).
-- List of administrators (Max 4)
-- The app name for your workspace (Eg. instant-pricing-dev)
-- Optionally an AD Group that needs access to download the app.
+* NodeJS
+* Angular 7
+* JavaScript
 
-**Note :** The access invitation is sent via an email that is currently blocked by mimecast. Please ensure to check you mimecast inbox to release it.
+Optional (As APIs are hosted)
+* Java 11 (OpenJDK)
+* Springboot
+* REST
+* Microsoft Azure
+* MS-SQL
 
-## A Collage of Features
+## General requirements
 
-### Build
-![Build](../../assets/images/mobileAppStore/build_thumbnail.png)
-
-### Analyze
-![Analyze](../../assets/images/mobileAppStore/analyze.png)
-
-![Analyze](../../assets/images/mobileAppStore/analyze1.png)
-
-### Test 
-![Test](../../assets/images/mobileAppStore/test.png)
-
-### Distribute
-![Distribute](../../assets/images/mobileAppStore/distribute.png)
-
-## Useful Reads/Links 
-
-- The platform itself - [HP IT Mobile App Store](https://appcenter.ms/orgs/hp-it-incubator). Please ensure you select **'Company or School Account'** in the initial login page and continue to use your HP credentials.
-
-- Understanding App Center - [Documentation](https://docs.microsoft.com/en-us/appcenter/)
-  
--  Mobile app development within HP - [Getting Started](mobile_app_development.md)
-
-## Roles
-
-- **Collaborator** - Think of it as an administrator for the app. The developers who are responsible for build-test-deploy. 
-  
-- **Testers** - People who need to download the app for testing. Collaborators set this up.
-  
-- **Distribution Groups** - Groups of testers that need access to download the app. Groups here refers to active directory groups. Collaborators set this up.
-
-## FAQ's
-
-- **Q :** I get a page called https://install.appcenter.ms. Is that the platform about?  
-  **A :** Yes and No. Yes since it is where you can download the apps available for distribution. No since that is just the tip of the iceberg. Read about [getting access](#Access) to see other features.  
+#### Code Quality
+* Important!! Reuse the existing code, components, CSS, js, etc as much as possible instead of duplicating the code.
 
 
-- **Q :** Is there a cost involved in using this platform?   
-  **A :** Depends. The platform is available for use with all the basic features without any costs. The basics include building apps, testing apps and deploying & distributing apps. Depending on your app maturity (Eg. needing multiple parallel builds or needing more testing devices) additional costs might be incurred.
+#### Code Formatting
+* Make sure code is well documented, all classes, methods, variables, parameters and return values must be documented in every single code file, and appropriate inline comments should be provided too where the code is not straightforward to understand.
+* Please use clean INDENTATION for all HTML code so future developers can follow the code.
+* Use appropriate linter to validate your code.
 
+#### Framework specific
+* To fetch data from the API create different services. Do NOT use single service for data handling.
+* Use Observable & Observable.subscribe() method wherever applicable. You may refer this: https://angular.io/tutorial/toh-pt4#subscribe-in-heroescomponent
+* Use Dependency Injection coding pattern.
 
-- **Q :** Does this platform have IT support?  
-  **A :** No. It is maintained by the IT Innovation Lab at the moment and any issues are addressed on a best-effort basis. 
+#### CSS Specific
+* Use CSS3 Media Queries to load different styles for each page. Do not build a different page for different device/layout.
+* You may use SCSS in the project.
+
+#### Layout
+* Minimum supported resolution is 1366x768 px. The UI application is fluid, it expands automatically beyond 1366px width.
+* Make sure you test the integrated code with chrome browser since the Web UI is supposed to be desktop responsive.
+
+#### Platform
+* Desktop: Chrome Browsers (Mac & Windows).
+* All other browsers are out of scope. This is an internal application and the client will only be using Chrome.
+
+## Application requirements
+
+>>>
+#### 0 Resource & links
+1. The existing application can be found in the forum.
+1. NEW API URL: Refer to the challenge forum.
+1. Marvel-app storyboard: https://marvelapp.com/888978d/screen/54568722.
+>>>
+
+>>>
+#### 1. Update the default view of the table details page.
+* By default on the table detail pages: https://hestiafrontend.azurewebsites.net/details/user_schema1/HotDeals the table should show the business owned columns only. After this, a user should be able to show/hide tables using *Column Settings* sections.
+* If a user refreshes the page then the table should retain the column show/hide state.
+* Ref: new response: https://d.pr/free/i/g2WYNo .  
+* A column having flag `business: false` considered as a non-business column, all other columns are `business` columns.
+>>>
+
+>>>
+#### 2. Update sorting the tables on Dashboard 
+All tables on the Dashboard page should sort the data such that recently edited records at placed on top. For implementing this sort the table based on modified date & show the most recent records on top.
+>>>
+
+>>>
+#### 3. *Add records* page & *Edit records* page should contain all business columns.
+* The Add records page & edit records page should allow adding/editing of the contents of all business columns.
+* A new record can be added or edited from the table details page similar to this: https://hestiafrontend.azurewebsites.net/details/user_schema1/HotDeals
+* Ref: new response: https://d.pr/free/i/g2WYNo .
+* A column having flag `business: false` considered as a non-business column, all other columns are `business` columns.
+>>>
+
+>>>
+#### 4. Fix table heading name
+* Ref: https://d.pr/free/i/2WHUZg
+* If the column name is in the upper case then it is displayed as spaced sperate letter. 
+* Update code in `top-toolbar.component.html:172` such that heading like `PRODUCT_GROUP_NK` should be displayed as 'Product Group Nk' column heading like `endedByAssociate ` should be displayed as `Ended By Associate`
+>>>
+
