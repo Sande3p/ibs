@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Hestia CC | Table and Add/Edit Enhancement
+title: Hestia CC | Table and Add/Edit Enhancements
 nav_order: 1
 published: true
 ---
