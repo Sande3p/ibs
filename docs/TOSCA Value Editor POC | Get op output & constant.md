@@ -4,7 +4,7 @@ title: TOSCA Value Editor POC | Get op output & constant
 published: true
 ---
 
-Welcome to the **TOSCA Value Editor POC | Get op output & constant** Challenge. In this challenge, we are looking for you to create the Value Editor POC application using Angular 2+ framework based on the requirements listed below.
+Welcome to the **TOSCA Value Editor POC - Get op output & constant** Challenge. In this challenge, we are looking for you to create the Value Editor POC application using Angular 2+ framework based on the requirements listed below.
 
 In the previous challenges [Challenge 1](https://www.topcoder.com/challenges/30094218/?type=develop) , [Challenge 2](https://www.topcoder.com/challenges/30095098/?type=develop), [Challenge 3](https://www.topcoder.com/challenges/30095348/?type=develop), [Challenge 4](https://apps.topcoder.com/forums/?module=Category&categoryID=72027), [Challegne 5](https://www.topcoder.com/challenges/30095768/?type=develop) & [Challegne 6](https://www.topcoder.com/challenges/30095984/?type=develop) we have developed *Constraint Editor & valiue editor*. Here we need update the functionalities of the **Value Editor**.
 
