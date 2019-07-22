@@ -25,10 +25,10 @@ twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings
-markdown: kramdown
-kramdown: 
+markdown: CommonMark
+commonmark:
   options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+  extensions: ["strikethrough", "autolink", "table"]
 theme: minima
 plugins:
   - jekyll-feed
