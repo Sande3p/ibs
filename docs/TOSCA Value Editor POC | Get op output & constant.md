@@ -18,11 +18,11 @@ _**Let us know any question you have!**_
 * JavaScript
 
 
->>>
+>
 #### 0 Resource & links
 * Storyboard & reference docs attached in the challenge forum.
 
->>>
+>
 
 #### 1 Storyboard:  
 <img src="https://cdn-std.dprcdn.net/files/acc_652531/hgbVQq" height="380" alt="" /> 
