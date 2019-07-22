@@ -36,5 +36,11 @@ color_scheme: nil
 # e.g, UA-1234567-89
 ga_tracking: UA-2709176-10
 
+# Build settings
+markdown: CommonMarkGhPages
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
+  
 plugins:
   - jekyll-seo-tag
