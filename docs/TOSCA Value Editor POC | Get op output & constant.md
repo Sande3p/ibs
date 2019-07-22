@@ -17,7 +17,7 @@ _**Let us know any question you have!**_
 * SCSS
 * JavaScript
 
->
+>  
 #### 0 Resource & links
 * Storyboard & reference docs attached in the challenge forum.
 
@@ -79,4 +79,3 @@ Ref: https://d.pr/free/i/f8GQx6 . Let's say a user has selected `captureSchemeDe
 >
 #### 4 Existing functions 
 * The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.
-
