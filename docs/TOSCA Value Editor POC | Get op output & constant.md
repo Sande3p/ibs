@@ -16,9 +16,8 @@ _**Let us know any question you have!**_
 * HTML
 * SCSS
 * JavaScript
-
->  
-#### 0 Resource & links
+ 
+> #### 0 Resource & links  
 * Storyboard & reference docs attached in the challenge forum.
 
 
