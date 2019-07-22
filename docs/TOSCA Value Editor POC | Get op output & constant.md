@@ -70,4 +70,4 @@ Ref: https://d.pr/free/i/f8GQx6 . Let's say a user has selected `captureSchemeDe
 * Resultant Syntax for this is: `constant(text_box_value)`
 
 #### 4 Existing functions 
-* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.  
+* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.
