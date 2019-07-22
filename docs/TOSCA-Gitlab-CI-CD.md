@@ -1,0 +1,61 @@
+---
+layout: default
+title: TOSCA Gitlab CI/CD
+published: true
+---
+
+Welcome to the **TOSCA Gitlab CI/CD to deploy on AWS** Challenge. In this challenge, we are looking for you to create Gitlab CI/CD pipeline to deploy Angular 2+ application on AWS using Weblogic 12c & Gradle.
+
+_**Let us know any question you have!**_
+
+#### Technology stack
+* Angular 7
+* AWS
+* Weblogic 12c
+* Gradle
+* CI/CD
+* Docker
+* YAML
+
+
+#### Prerequisites
+* An AWS account. Members are requied to use their own AWS account.
+* GitLab account.
+
+#### References
+* [GitLab CI/CD](https://docs.gitlab.com/ee/ci/)
+* [Building Docker images with GitLab CI/CD](https://docs.gitlab.com/ee/ci/docker/using_docker_build.html)
+
+#### Resource & Links
+* Angular 2+ application to be deployed is provided in forum
+* Another Angular 2+ POC application built using *Gradle* & deployed on *Weblogic 12c* has be provided in forum.
+
+#### Requirements
+
+* Create a GitLab CI/CD pipeline  configured by a file called `.gitlab-ci.yml`. It should **test/lint** & **build** the Angular 2+ applicaiton after this is should will deploy the application on WebLogic 12c hosted on AWS.
+
+* The CI/CD should make use of docker container that should have at least Java, Gradle and NodeJS to complete the build & deployment on a Webloc 12c server hosted on AWS.
+
+* The CI/CD should be triggered whenever code push happens to the `staging` branch & it should do the following:
+```
+pipeline {
+
+    stages {
+        stage('Test') {
+            steps {
+		  		<Lint the code>
+            }
+        }
+        stage('Build') {
+            steps {
+                <Call Gradle Build Task>
+            }
+        }
+        stage('Deploy') {
+            steps {
+                <Deploy Build Result to Weblogic (Sandbox) & host on AWS>
+            }
+        }
+    }
+}
+```
