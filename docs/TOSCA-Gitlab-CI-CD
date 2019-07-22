@@ -1,6 +1,7 @@
 ---
 layout: default
 title: TOSCA Gitlab CI/CD
+published: true
 ---
 
 Welcome to the **TOSCA Gitlab CI/CD to deploy on AWS** Challenge. In this challenge, we are looking for you to create Gitlab CI/CD pipeline to deploy Angular 2+ application on AWS using Weblogic 12c & Gradle.
