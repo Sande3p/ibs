@@ -61,24 +61,25 @@ Ref: https://d.pr/free/i/uVVmoI . Let's say a user has selected `CreateScheme` i
 * If *operation_entity select control's* value is null then there should be no drop-down values for the `output_entity` select control.
 * If *operation_entity select control's* value is not null then the drop-down options of *output_entity select control* should list the values from the `outputs` node of the *operation_entity's* selected value. 
 Ref: https://d.pr/free/i/f8GQx6 . Let's say a user has selected `captureSchemeDetails` in the *operation_entity select control* then, in this case the options of *operation_entity select control* should be *schemeSysid, schemeNumber, errorCode , errorMessage*
->>>
 
->>>
-#### 3 Code view
+#### 2.6 Code view
 
 * https://d.pr/free/i/QrqLm0
 * Update the code view based on the selected nodes.
->>>
 
->>>
-#### 4 Resultant Syntax
+#### 2.7 Resultant Syntax
 * The resulatant syntax for `get_operation_output` is `get_operation_output(modable_entity_val, modable_entity_val.target_entity_val.operation_entity_val, output_entity_val)`.
 * Ex: `get_operation_output(SELF, newEquipmentScheme.CreateScheme.captureSchemeDetails, schemeSysid)`.
 >>>
 
 >>>
-#### 5 Existing functions 
-* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.
+#### 3 Constant
+* On selecting the *constant* option, the right section should show one text-box.
+* User shold be able to enter any value in this textbox.
+* Resultant Syntax for this is: `constant(text_box_value)`
 >>>
 
-
+>>>
+#### 4 Existing functions 
+* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.
+>>>
