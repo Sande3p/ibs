@@ -17,24 +17,19 @@ _**Let us know any question you have!**_
 * SCSS
 * JavaScript
  
-<section>
 #### 0 Resource & links  
 * Storyboard & reference docs attached in the challenge forum.
-</section>
 
 #### 1 Storyboard:  
 <img src="https://cdn-std.dprcdn.net/files/acc_652531/hgbVQq" height="380" alt="" /> 
 
-<section>
 Only the sections marked in green are in scope. Other than that the sidebar should also be updated & button functions should work.
 1. Value Editor: get_operation_output
 1. Value Editor: constant
 
 * **The value Editor should update the value of the `default` node.** in the  [Existing.yaml](https://gitlab.com/tosca-open/poc-blueprint/blob/dev/src/assets/yaml/Existing.yaml#L25).
 * If  `Required: true` (checked https://d.pr/free/i/Obv5DW) then the value of `default` should be null/blank & hide this *Value Editor* section form the screen otherwise, show the *Value Editor* section.
-</section>
   
-<section>
 #### 2 Value Editor: get_operation_output
 * On selecting the *get_operation_output* option, the right section drop-down options should list the 5 drop-downs & a code viewer section as displayed in the *1. Storyboard* section.
 * These five drop-downs synched with each other:
@@ -68,16 +63,11 @@ Ref: https://d.pr/free/i/f8GQx6 . Let's say a user has selected `captureSchemeDe
 #### 2.7 Resultant Syntax
 * The resulatant syntax for `get_operation_output` is `get_operation_output(modable_entity_val, modable_entity_val.target_entity_val.operation_entity_val, output_entity_val)`.
 * Ex: `get_operation_output(SELF, newEquipmentScheme.CreateScheme.captureSchemeDetails, schemeSysid)`.
-</section>
 
-<section>
 #### 3 Constant
 * On selecting the *constant* option, the right section should show one text-box.
 * User shold be able to enter any value in this textbox.
 * Resultant Syntax for this is: `constant(text_box_value)`
-</section>
 
-<section>
 #### 4 Existing functions 
-* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.
-</section>  
+* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.  
