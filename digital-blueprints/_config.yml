@@ -26,6 +26,9 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
+kramdown: 
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table", "tagfilter"]
 theme: minima
 plugins:
   - jekyll-feed
