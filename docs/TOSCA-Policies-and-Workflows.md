@@ -70,12 +70,6 @@ Only the sections marked in green are in scope. Other than that the sidebar shou
 * For color & other layout elements you may follow the existing application.
 
 
-* https://marvelapp.com/62b5ae5/screen/59039029
-* https://marvelapp.com/62b5ae5/screen/59039030
-* https://marvelapp.com/62b5ae5/screen/59039031
-* https://marvelapp.com/62b5ae5/screen/59039069
-* https://d.pr/free/i/ejzlIM
-
   
 #### 1. Default view
 * Initially both the Policy & Workflow controls stays at the center of the *Policy & Workflow editor*. Ref: https://d.pr/free/i/wrrA6r
