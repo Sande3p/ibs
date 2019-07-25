@@ -1,3 +1,7 @@
+---
+title: TOSCA Policies and Workflows
+layout: default
+---
 
 Welcome to the **TOSCA Policies and Workflows** Challenge. In this challenge, we are looking for you to create the Value Editor POC application using Angular 2+ framework based on the requirements listed below.
 
