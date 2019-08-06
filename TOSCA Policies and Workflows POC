@@ -1,0 +1,85 @@
+Welcome to the **TOSCA Policies and Workflows POC** Challenge. In this challenge, we are looking for you to create the TOSCA Policies and Workflows POC application using Angular 2+ framework based on the requirements listed below.
+
+In the previous challenges [Challenge 1](https://www.topcoder.com/challenges/30094218/?type=develop) , [Challenge 2](https://www.topcoder.com/challenges/30095098/?type=develop), [Challenge 3](https://www.topcoder.com/challenges/30095348/?type=develop), [Challenge 4](https://apps.topcoder.com/forums/?module=Category&categoryID=72027), [Challenge 5](https://www.topcoder.com/challenges/30095768/?type=develop), [Challenge 6](https://www.topcoder.com/challenges/30095984/?type=develop), [Challenge 7](https://www.topcoder.com/challenges/30096503/?type=develop) & [Challenge 8](https://www.topcoder.com/challenges/30097906/?type=develop) we have developed *Constraint Editor, Value editor & some parts of the policies and workflows*. Here are going to enhance the poilices and wrokflows with new features..
+
+_**Let us know any question you have!**_
+
+#### Technology stack
+* Angular 7
+* NodeJS
+* HTML
+* SCSS
+* JavaScript
+
+## General requirements
+
+
+#### Layout
+* The POC should support resolutions 1920px x 1080px and above.
+* The application layout should appear somewhat similar to the sides provided.
+* It's **NOT** required to exactly match font, font-size, color, element dimension, etc because the focus is mainly on the POC functions.
+
+#### Framework specific
+* Imp!: **Blueprint data should be fetched from YAML file** for other application data JSON format mock files can be used.
+* Use Observable & Observable.subscribe() method wherever applicable. You may refer this: https://angular.io/tutorial/toh-pt4#subscribe-in-heroescomponent
+* Use Dependency Injection coding pattern.
+* `ng build` should work without throwing any error.
+
+#### Code formatting
+* Make sure code is well documented, all classes, methods, variables, parameters, return values must be documented in every single code file, and appropriate inline comments should be provided too where the code is not straightforward to understand.
+* Please use clean INDENTATION for all HTML code so future developers can follow the code.
+* Use appropriate linter to validate your code.
+
+#### HTML Specific
+* HTML should be valid HTML5 compliant.
+* All HTML code naming should not have any conflicts or errors.
+* Element and Attribute names should be in lowercase and use a '-' or camel naming to separate multiple-word classes (i.e.. 'main-content', or 'mainContent)
+* Use semantically correct tags- use H tags for headers, etc. Use strong and em tags instead of bold and italic tags.
+* No inline CSS styles- all styles must be placed in an external stylesheet.
+
+#### CSS Specific
+* Use CSS3 Media Queries to load different styles for each page. Do not build a different page for different device/layout.
+* You may use SCSS in the project.
+
+
+#### Platform
+* Desktop: Chrome latest, Firefox latest (Mac & Windows), Safari latest (Mac), IE11+ (Windows), MS Edge
+* **IE11 is the primary browser.**
+
+
+## App Requirement
+
+#### 0 Resource & links  
+* Existing app & reference docs are attached in the **challenge forum**.
+
+#### 1 Storyboard:
+
+<img src="https://cdn-std.dprcdn.net/files/acc_652531/egcXaJ" height="380" alt="" />   
+
+Only the sections marked in green are in scope. Other than that the sidebar should also be updated & button functions should work.
+1. Sidebar: Policies & workflows node
+1. Policies & workflows
+
+* The background of Policies & workflows editor shold be plain gray, do **NOT** add grid background.
+* The red crossed section in the above image shouldn't be added.
+* For color & other layout elements you may follow the existing application.
+
+
+  
+#### 1. Policy: Conditions
+* Ref: https://marvelapp.com/62b5ae5/screen/59039076
+* The drop-down of the conditions drop down should list all the properties present in the the policy. https://d.pr/free/i/PnnnNp
+* For every property only one condition can be added. So, if use selects a property from a drop-down then that option should not be selectable again. Use your best judgement to implement the workflow here.
+* Initially the braces "{}" icon remains disabled. As a use selects a property the currosponding braces icon "{}" gets activated.
+* On clicking the active braces icon "{}" (blue colored), the *Constraint Editor* should appear.
+* The *Constraint Editor* allows a user to select a condition.
+* On performing these operations the YAML sould keep on updating and on view the YAML code the updated code should appear.
+* Updating the **Condtions** should update the values of the `worflows > preconditions > condition` node https://d.pr/free/i/WeYWcg .
+
+#### 2. Policy: Triggers
+* Ref: https://marvelapp.com/62b5ae5/screen/59039098
+* Clicking the *Triggers* option from the left side of policies should open the *Trigger* widgets under *Targets*.
+* Only implement the UI for this widget, it's going to be udpated later.
+
+#### 3 Existing functions 
+* The existing functions implemented on clicking the button on the upper right section should continue to work even after implementing the above requirements.
